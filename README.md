@@ -24,4 +24,6 @@ Here’s the list of practice questions I’m working on:
 9. Build a button with gradient background and rounded corners.
 10. Create a card with border, padding, and shadow.  
 
+
+The questions will be updated as I will progress further
 ---
