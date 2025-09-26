@@ -11,4 +11,10 @@
     .show{
         @apply translate-y-[0];
     }
+    .grid-mobile{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 230px);
+        place-items: center;
+        gap: 1rem;
+    }
 }

@@ -32,7 +32,6 @@
     --tracking-wider: 0.05em;
     --radius-2xl: 1rem;
     --radius-4xl: 2rem;
-    --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -247,6 +246,9 @@
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .hidden {
     display: none;
   }
@@ -293,6 +295,9 @@
   }
   .w-\[300px\] {
     width: 300px;
+  }
+  .w-auto {
+    width: auto;
   }
   .w-full {
     width: 100%;
@@ -355,6 +360,10 @@
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
+  }
+  .border-8 {
+    border-style: var(--tw-border-style);
+    border-width: 8px;
   }
   .border-\[2px\] {
     border-style: var(--tw-border-style);
@@ -661,14 +670,40 @@
       height: calc(var(--spacing) * 50);
     }
   }
+  .\[\&_\*\]\:h-60 {
+    & * {
+      height: calc(var(--spacing) * 60);
+    }
+  }
+  .\[\&_\*\]\:w-50 {
+    & * {
+      width: calc(var(--spacing) * 50);
+    }
+  }
   .\[\&_\*\]\:w-full {
     & * {
       width: 100%;
     }
   }
+  .\[\&_\*\]\:max-w-80 {
+    & * {
+      max-width: calc(var(--spacing) * 80);
+    }
+  }
+  .\[\&_\*\]\:max-w-150 {
+    & * {
+      max-width: calc(var(--spacing) * 150);
+    }
+  }
   .\[\&_\*\]\:justify-center {
     & * {
       justify-content: center;
+    }
+  }
+  .\[\&_\*\]\:border-8 {
+    & * {
+      border-style: var(--tw-border-style);
+      border-width: 8px;
     }
   }
   .\[\&_\*\]\:bg-black {
@@ -754,14 +789,6 @@
       }
     }
   }
-  .sm\:\[\&_\*\]\:duration-600 {
-    @media (width >= 40rem) {
-      & * {
-        --tw-duration: 600ms;
-        transition-duration: 600ms;
-      }
-    }
-  }
   .sm\:\[\&_\*\]\:hover\:bg-transparent {
     @media (width >= 40rem) {
       & * {
@@ -793,6 +820,12 @@
   .show {
     --tw-translate-y: 0;
     translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .grid-mobile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 230px);
+    place-items: center;
+    gap: 1rem;
   }
 }
 @property --tw-border-style {
