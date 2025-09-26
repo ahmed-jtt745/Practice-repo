@@ -22,7 +22,9 @@ Here’s the list of practice questions I’m working on:
 7. Add hover effects on a button: change background, text color, and scale. 
 8. Practice opacity + transition so an element fades smoothly on hover. 
 9. Build a button with gradient background and rounded corners.
-10. Create a card with border, padding, and shadow.  
+10. Create a card with border, padding, and shadow. 
+11. Build a navbar with logo + links, stacked on mobile but horizontal on desktop.
+ 
 
 
 The questions will be updated as I will progress further
