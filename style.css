@@ -3,6 +3,7 @@
  
 @theme{
     --font-alan: "Alan Sans", sans-serif;
+    --breakpoint-sm: 768px;
 }
 @layer components{
     .hide{
@@ -13,8 +14,11 @@
     }
     .grid-mobile{
         display: grid;
-        grid-template-columns: repeat(auto-fit, 230px);
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
         place-items: center;
         gap: 1rem;
+    }
+    .cut{
+        clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
     }
 }

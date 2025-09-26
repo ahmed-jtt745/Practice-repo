@@ -24,7 +24,8 @@ Here’s the list of practice questions I’m working on:
 9. Build a button with gradient background and rounded corners.
 10. Create a card with border, padding, and shadow. 
 11. Build a navbar with logo + links, stacked on mobile but horizontal on desktop.
-12. Create a responsive 3-column grid for features that collapses to 1 column on mobile. 
+12. Create a responsive 3-column grid for features that collapses to 1 column on mobile.
+13. Create a responsive hero section with a diagonal cut with text on the left and picture on the right side. 
 
 
 The questions will be updated as I will progress further
