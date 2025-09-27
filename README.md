@@ -26,6 +26,7 @@ Here’s the list of practice questions I’m working on:
 11. Build a navbar with logo + links, stacked on mobile but horizontal on desktop.
 12. Create a responsive 3-column grid for features that collapses to 1 column on mobile.
 13. Create a responsive hero section with a diagonal cut with text on the left and picture on the right side. 
+14. Create a simple page with sidebar section that collapses on width < 768px
 
 
 The questions will be updated as I will progress further
